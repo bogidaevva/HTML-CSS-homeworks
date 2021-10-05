@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Поиск квартиры</title>
+</head>
+
+<body>
+    <form action="#" method="POST">
+        <div>
+            <label for="district">Выберите район</label>
+            <input type="text" id="district" list="spb-districts">
+        </div>
+        <datalist id="spb-districts">
+            <option value="Адмиралтейский">
+            <option value="Василеостровский">
+            <option value="Выборгский">
+            <option value="Калининский">
+            <option value="Кировский">
+            <option value="Колпинский">
+            <option value="Красногвардейский">
+            <option value="Красносельский">
+            <option value="Кронштадтский">
+            <option value="Курортный">
+            <option value="Московский">
+            <option value="Невский">
+            <option value="Петроградский">
+            <option value="Петродворцовый">
+            <option value="Приморский">
+            <option value="Пушкинский">
+            <option value="Фрунзенский">
+            <option value="Центральный">
+        </datalist>
+        <div>
+            <label for="rooms">Укажите количество комнат</label>
+            <select name="rooms" id="rooms">
+                <option value="studio">Студия</option>
+                <option value="1-room">1-комнатная</option>
+                <option value="2-room">2-комнатная</option>
+                <option value="3-room">3-комнатная</option>
+                <option value="4-room">4-комнатная</option>
+                <option value="5-room">5-комнатная</option>
+            </select>
+        </div>
+        <div>
+            <label for="year">Выберите год сдачи дома</label>
+            <select name="year" id="year">
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2013">2013</option>
+                <option value="2014">2014</option>
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+            </select>
+        </div>
+        <div>
+            <label for="rent">Укажите максимальный размер арендной платы</label>
+            <input type="number" id="rent" name="rent" min="0" step="1000">
+        </div>
+        <div>
+            <label for="area">Укажите желаемую площадь квартиры</label>
+            <input type="number" id="area" name="area" max="200" min="0">
+        </div>
+        <div>
+            <label for="with-facing">с отделкой</label>
+            <input type="radio" id="with-facing" name="facing" value="with">
+            <label for="without-facing">без отделки</label>
+            <input type="radio" name="facing" id="without-facing" value="without">
+        </div>
+        <div>
+            <label for="with-terrace">с терассой</label>
+            <input type="radio" id="with-terrace" name="terrace" value="with">
+            <label for="without-terrace">без террасы</label>
+            <input type="radio" id="without-terrace" name="terrace" value="without">
+        </div>
+        <div>
+            <label for="business-class">бизнес-класс</label>
+            <input type="checkbox" id="business-class" name="class[]" value="business">
+            <label for="premium">премиум</label>
+            <input type="checkbox" id="premium" name="class[]" value="premium">
+            <label for="deluxe">deluxe</label>
+            <input type="checkbox" id="deluxe" name="class[]" value="deluxe">
+        </div>
+        <div>
+            <label for="floor">Выберите этаж</label>
+            <select name="floor" id="floor">
+                <option value="first">Первый</option>
+                <option value="second">Второй</option>
+                <option value="third">Третий</option>
+                <option value="fourth">Четвертый</option>
+                <option value="fifth">Пятый</option>
+                <option value="sixth">Шестой</option>
+                <option value="seventh">Седьмой</option>
+                <option value="eight">Восьмой</option>
+                <option value="ninth">Девятый</option>
+                <option value="not first">Любой, кроме первого</option>
+                <option value="not last ">Любой, кроме последнего</option>
+            </select>
+        </div>
+        <button type="submit">Начать поиск</button>
+</body>
+
+</html>
