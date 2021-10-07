@@ -1,0 +1,88 @@
+
+.container {
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0;
+    background-image: url(https://i.pinimg.com/564x/e7/42/db/e742dbe2ab887325cc87233dc442b21f.jpg);
+    background-attachment: fixed;
+    background-position: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#points {
+    display: none;
+}
+
+#menu a {
+    text-decoration: none;
+    font-size: larger;
+    color: whitesmoke;
+}
+
+#menu ul > li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px 20px 16px 20px;
+    border-bottom: 4px solid transparent;
+}
+
+#menu ul > li:hover {
+    border-bottom: 4px solid whitesmoke;
+}
+#menu {
+    background-color: rgb(36, 97, 66);
+}
+h2 {
+    color: rgb(36, 97, 66);
+    text-align: center;
+}
+
+.link {
+    display: block;
+    text-align: center;
+    background-color: rgb(36, 97, 66);
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 3px;
+    font-size: larger;
+}
+
+.page {
+    display: inline-block;
+    background-color: whitesmoke;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    text-align: center;
+    border: 2px solid rgb(36, 97, 66);
+    border-radius: 3px;
+    color: rgb(36, 97, 66);
+}
+
+.page:hover {
+    background-color: rgba(36, 97, 66, 0.733);
+}
+
+.pages {
+    text-align: center;
+    margin: 30px auto 60px;
+}
+
+p {
+    color: rgb(36, 97, 66);
+}
