@@ -1,0 +1,117 @@
+/*@import "flex-grid.css";
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+header {
+    background-color: peru;
+    flex-basis: 100%;
+}
+
+aside {
+    background-color: burlywood;
+    flex-basis: 18%;
+}
+
+main {
+    flex-basis: 80%;
+    padding: 2%;
+}
+
+footer {
+    background-color: cornflowerblue;
+    flex-basis: 100%;
+}
+
+#menu a {
+    text-decoration: none;
+    font-size: larger;
+    color: black;
+}
+
+#menu ul > li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px 20px 16px 20px;
+    border-bottom: 4px solid transparent;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 10px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+#items {
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper-1 {
+    display: flex;
+    align-content: flex-start;
+}
+
+.item-1 {
+    flex: 1;
+    padding: 5px;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100%;
+}
+
+.picture {
+    padding: 5px;
+}
+
+div {
+    background-color: moccasin;
+}
+
+article a {
+    text-decoration: none;
+
+}
+
+article p {
+    align-items: center;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.link {
+    text-align: center;
+}
+
+*/
