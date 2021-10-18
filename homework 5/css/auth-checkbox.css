@@ -1,0 +1,134 @@
+@import "style-checkbox.css";
+
+body {
+    background-image: url('../img/cake.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+body:before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+form {
+    color:#123C69;
+    padding: 2rem;
+    background-color: rgb(237, 231, 246);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.22);
+    border-radius: 5px;
+}
+
+input[type="text"], /* тег input со значением 'text' атрибута 'type' */
+input[type="password"],  /* тег input со значением 'password' атрибута 'type' */
+.login-icon,
+.pwd-icon {
+    font-size: 1rem;
+    color: rgb(74, 20, 140);
+}
+
+/* СТИЛИЗАЦИЯ  placeholder */
+input::-webkit-input-placeholder {
+    color: #123C69;
+}
+
+input::-moz-placeholder {
+    color: #123C69;
+}
+
+input::-ms-input-placeholder {
+    color: #123C69;
+}
+
+input[type="text"],
+input[type="password"] {
+    border-style: none;
+    outline-style: none;
+    background-color: transparent;
+    border-bottom: 3px solid #123C69;
+    border-radius: 0;
+    padding: 5px 0 5px 40px;
+}
+
+.icon {
+    position: relative;
+}
+
+.icon span {
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-bottom: 3px solid #72162d;
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 40px; /*чтобы не ехала рамку внизу*/
+}
+
+/* + означает "сразу после установки в фокус инпута с типом текст (/с типом пароль)" */
+input[type="text"]:focus + .login-icon,
+input[type="password"]:focus + .pwd-icon {
+    display: none;
+}
+
+/* стилизация checkbox */
+
+.remember-label {
+    display: block;
+    line-height: 2rem;
+    margin: 0;
+    user-select: none; /* пользователь не может выбрать текст */
+    cursor: pointer;
+    position: relative;
+}
+
+.remember-label input[type="checkbox"] {
+    position: absolute;
+    display: block;
+    z-index: -1;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.remember-label span {
+    display: inline-block;
+    line-height: 1rem;
+    padding: 0 0 0 2rem;
+    position: relative;
+}
+
+.remember-label span:before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    top: 0;
+    left: 0;
+    border: 2px solid #123C69;
+    border-radius: 5px;
+}
+
+.remember-label input[type="checkbox"]:checked + span:before {
+    content: "✓";
+    color: #72162d;
+    text-align: center;
+    font-weight: bold;
+}
+
+ 
